@@ -1,0 +1,69 @@
+/* Global CSS Start */
+:root{
+    --header: #121212; /*Header & Body*/
+    --hero-cards: #1D1D1D; /* Hero BG and Our Course Cards*/
+    --span-hovers: #BEA69E; /* Span Words and Hover*/
+    --text-color: #FFFFFF; /* Texts - Buttons and Links */
+}
+html,
+body{
+    background-color: var(--header);
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+a, p, li, h1, h2, h3 ,h4{
+    color: var(--text-color);
+}
+span{
+    color: var(--span-hovers);
+}
+/* Global CSS End */
+/* Header Starts */
+header{
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    width: 90%;
+    max-width: 375px;
+    height: fit-content;
+    margin: 0 20px;
+    margin-top: 20px;
+    border: 1px solid #ffffff40;
+    border-radius: 12px;
+}
+.container{
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    height: fit-content;
+    width: 100%;
+}
+.container .logo{
+    width: 100%;
+    margin: 17px 0;
+    margin-left: 20px;
+}
+.container .header-menu{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
+    gap: 17px;
+    height: fit-content;
+    align-self: center;
+}
+.container .header-menu .icon-camm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    width: 32px;
+    height: 32px;
+    border: 1px solid var(--hero-cards);
+}
+/* Header Ends */
