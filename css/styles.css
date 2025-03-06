@@ -8,6 +8,8 @@
 html,
 body{
     background-color: var(--header);
+    background-image: url(../images/Graphic.png);
+    background-repeat: no-repeat;
 }
 a{
     text-decoration: none;
@@ -17,9 +19,28 @@ ul{
 }
 a, p, li, h1, h2, h3 ,h4{
     color: var(--text-color);
+    font-family: 'DM Sans', sans-serif;
+}
+h1{
+    margin: 0 20px;
+    margin-top: 40px;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 44px;
+    letter-spacing: -0.04em;
+    text-align: start;
+}
+p{
+    margin: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    text-align: start;
 }
 span{
     color: var(--span-hovers);
+    font-style: italic;
 }
 /* Global CSS End */
 /* Header Starts */
@@ -67,3 +88,59 @@ header{
     border: 1px solid var(--hero-cards);
 }
 /* Header Ends */
+/*Hero Start*/
+.hero .container{
+    margin: 20px;
+    border: 1px solid var(--hero-cards);
+    border-radius: 30px;
+    background-color: var(--hero-cards);
+    width: 90%;
+    flex-direction: column;
+    max-width: 375px;
+}
+.hero .container .hero-img{
+    margin: 0 38px;
+}
+.hero .container .hero-card{
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+.hero .container .hero-card .card-users .user-img{
+    margin-left: 20px;
+}
+.hero .container .hero-card .card-users .user-para{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin-left: 20px;
+}
+.user-para p{
+    margin: 0;
+    white-space: wrap;
+    width: 80px;
+}
+.hero .container .hero-card .card-reviews{
+    display: flex;
+    gap: 12px;
+}
+.hero .container .hero-card .card-reviews .review-para{
+    margin: 0;
+    color: #FFFFFF50;
+    font-weight: 300;
+}
+.hero .container .hero-card .card-reviews .review-para span{
+    color: var(--text-color);
+    font-style: normal;
+    font-weight: 500;
+}
+.hero .container .hero-card .card-reviews .review-svg{
+    background: var(--span-hovers);
+    width: 44px;
+    height: 44px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Hero End*/
