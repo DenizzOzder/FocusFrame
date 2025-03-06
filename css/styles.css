@@ -89,6 +89,10 @@ header{
 }
 /* Header Ends */
 /*Hero Start*/
+.hero{
+    background-image: url(../images/Graphic.png);
+    background-repeat: no-repeat;
+}
 .hero .container{
     margin: 20px;
     border: 1px solid var(--hero-cards);
@@ -144,3 +148,60 @@ header{
     align-items: center;
 }
 /*Hero End*/
+
+/*Ad Start*/
+.ad{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid #ffffff50;
+    border-bottom: 1px solid #ffffff50;
+    background-color: var(--header);
+}
+.ad .ad-head{
+    display: block;
+    font-weight: 500;
+    font-size: 28px;
+    letter-spacing: -0.02em;
+    line-height: 38px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    animation: moveText 5s linear infinite;
+    will-change: transform;
+    margin: 10px;
+}
+  /*AD Animation*/
+  @keyframes moveText {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+.ad .ad-head .ad-span{
+    font-style: normal;
+}
+/*Ad End*/
+/*About Us Start*/
+.about-us{
+    background-color: var(--header);
+    padding-top: 20px;
+}
+.about-us .container{
+    flex-direction: column;
+}
+.about-us .container .about-head{
+    margin: 20px;
+}
+.about-us .container .about-head .about-span{
+    font-style: normal;
+}
+.about-us .container .about-content .about-img{
+    margin: 20px;
+}
+/*About Us End*/
+
+/*Our Courses Start*/
+
+/*Our Courses End*/
