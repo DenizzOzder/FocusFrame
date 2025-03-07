@@ -358,3 +358,50 @@ header{
     color: var(--span-hovers);
 }
 /*Sign Up End*/
+
+/* Reviews Start */
+.review{
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+.review .container{
+    flex-direction: column;
+
+}
+.review .container .review-card{
+    display: flex;
+    border: 1px solid #ffffff30;
+    margin: 20px;
+    border-radius: 12px;
+    flex-direction: column;
+}
+.review .container .review-card .review-content .review-img{
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+.review .container .review-card .review-content{
+    display: flex;
+}
+.review .container .review-card .review-content .review-info{
+    display: flex;
+    flex-direction: column;
+}
+.review .container .review-card .review-content .review-info .yellow-rating .star{
+    fill: var(--span-hovers);
+}
+.review .container .review-card .review-content .review-info .yellow-rating .black-star{
+    fill: #414141;
+}
+.review .container .review-card .review-content .review-info  .review-name{
+    margin: 0;
+    margin-top: 28px;
+}
+.review .container .review-card .review-content .review-role{
+    margin: 0;
+    margin-top: 10px;
+    align-self: flex-start;
+    color: #ffffff40;
+}
+/* Reviews End */
