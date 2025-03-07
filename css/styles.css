@@ -233,6 +233,9 @@ header{
     margin-top: 28px;
     margin-left: 8px;
 }
+.our-course .container .course-cards .card-top .card-number{
+    color: #ffffff40;
+}
 .our-course .container .course-cards .card-top svg{
     margin-right: 28px;
 }
@@ -253,3 +256,42 @@ header{
     color: #FFFFFF50;
 }
 /*Our Courses End*/
+
+/* Our Mentor Start */
+ .our-mentor{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin-top: 60px;
+ }
+ .our-mentor .container{
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+ }
+ .our-mentor .container .mentor-head{
+    align-self: flex-start;
+ }
+ .our-mentor .container .mentor-head .mentor-span{
+    font-style: normal;
+ }
+ .our-mentor .container .mentor-content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+    gap: 4px;
+    align-items: center;
+ }
+ .our-mentor .container .mentor-content .mentor-name,.our-mentor .container .mentor-content .mentor-text{
+    margin: 0;
+ }
+ .our-mentor .container .mentor-content .mentor-name{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+ }
+ .our-mentor .container .mentor-content .mentor-text{
+    color: #ffffff50;
+ }
+
+/*Our Mentor End */
