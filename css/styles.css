@@ -375,6 +375,7 @@ header{
     margin: 20px;
     border-radius: 12px;
     flex-direction: column;
+    margin-bottom: 80px;
 }
 .review .container .review-card .review-content .review-img{
     margin-left: 20px;
@@ -387,6 +388,10 @@ header{
 .review .container .review-card .review-content .review-info{
     display: flex;
     flex-direction: column;
+}
+.review .container .review-card .review-content .review-info .yellow-rating{
+    width: 100%;
+    margin-top: 8px;
 }
 .review .container .review-card .review-content .review-info .yellow-rating .star{
     fill: var(--span-hovers);
@@ -405,3 +410,7 @@ header{
     color: #ffffff40;
 }
 /* Reviews End */
+
+/*Footer Start*/
+
+/*Footer End*/
