@@ -295,3 +295,66 @@ header{
  }
 
 /*Our Mentor End */
+
+/*Sign Up Start*/
+ .signUp{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin-top: 80px;
+ }
+ .signUp .container{
+    flex-direction: column;
+ }
+ .signUp .container .signUp-head .sign-span{
+    font-style: normal;
+ }
+ .signUp .container .signUp-head{
+    margin-bottom: 0;
+ }
+.signUp .container .sign-form{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.signUp .container .sign-form .form-input{
+    border: 1px solid #ffffff40;
+    background-color: #12121200;
+    border-radius: 12px;
+    padding: 14px 18px;
+}
+.signUp .container .sign-form .submit{
+    background-color: var(--text-color);
+    color: var(--header);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 32px;
+}
+.signUp .container .sign-form .text-area{
+    height: 150px;
+    padding: 10px;
+    text-align: left;
+    line-height: 1.5;
+    resize: none; 
+    border: 1px solid #ffffff40;
+    background-color: #12121200;
+    border-radius: 12px;
+    vertical-align: top;
+}
+.signUp .container .sign-form .form-footer{
+    margin: 12px 0;
+    color: #ffffff40;
+    font-size: 12px;
+}
+.signUp .container .sign-form .form-footer .form-link{
+    color: inherit;
+    text-decoration: underline;
+    width: fit-content;
+    display: inline-block;
+}
+.signUp .container .sign-form .form-footer .form-link:hover, .signUp .container .sign-form .form-footer .form-link:active{
+    color: var(--span-hovers);
+}
+/*Sign Up End*/
