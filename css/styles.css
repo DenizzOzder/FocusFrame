@@ -10,6 +10,7 @@ body{
     background-color: var(--header);
     background-image: url(../images/Graphic.png);
     background-repeat: no-repeat;
+    overflow-x: hidden;
 }
 a{
     text-decoration: none;
@@ -58,16 +59,17 @@ header{
     height: fit-content;
     margin: 0 20px;
     margin-top: 20px;
-    border: 1px solid #ffffff40;
-    border-radius: 12px;
+
 }
-.container{
+header .container{
     display: flex;
     position: relative;
     overflow: hidden;
     height: fit-content;
     width: 100%;
     max-width: 375px;
+    border: 1px solid #ffffff40;
+    border-radius: 12px;
 }
 .container .logo{
     width: 100%;
@@ -93,6 +95,19 @@ header{
     height: 32px;
     border: 1px solid var(--hero-cards);
 }
+header .sign-btn{
+    padding: 16px 58px;
+    text-transform: uppercase;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: start;
+    display: none;
+}
+header .icon-camm{
+    visibility: hidden;
+}
 
  /*Mobil Menü */
  .mobile-menu {
@@ -111,6 +126,7 @@ header{
     display: block;
     position: absolute;
     right: 20px;
+    color: black;
 }
 .mobile-menu .nav-list {
     list-style: none;
@@ -534,3 +550,144 @@ footer .footer-footer .footer-text{
     white-space: nowrap;
 }
 /*Footer End*/
+
+
+/* RESPONSIVE */
+
+@media (min-width:768px) and (max-width:1158px){
+    body{
+        max-width: 768px;
+        background-image: url(../images/bg-tablet.png);
+    }
+    header{
+        max-width: 768px;
+        margin: 20 auto;
+        width: 100%;
+    }
+    header .container{
+        max-width: 100%;
+    }
+    header .sign-btn{
+        display: block;
+        margin-left: 20px;
+        border:none;
+    }
+    .hero .container{
+        max-width: 100%;
+        width: 100%;
+        background-image: url(../images/hero-tablet.png);
+        background-size: 393px 434px;   /* Resmi kırpmadan sığdır */
+        background-repeat: no-repeat; /* Tekrar etmesini engelle */
+        background-position: center bottom; /* Ortala ve en alta yerleştir */
+    }
+    .hero .container .hero-heading{
+        font-size: 60px;
+        max-width: 500px;
+        margin: 0;
+        margin-left: 32px;
+        margin-top: 64px;
+        line-height: 64px;
+    }
+    .hero .container .hero-para{
+        max-width: 418px;
+    }
+    .hero .container .hero-card .card-users{
+        display: flex;
+    }
+    .hero .container .hero-card .card-users .user-para{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    .hero .container .hero-img{
+        visibility: hidden;
+    }
+    .mobile-menu{
+        width: 480px;
+        height: 1024px;
+    }
+
+    .mobile-menu .nav-list {
+        list-style: none;
+        padding: 0;
+        margin-top: 232px;
+        margin-left: 64px;
+    }
+    
+    .mobile-menu .nav-list .nav-list-item {
+        margin-bottom: 28px;
+    }
+
+    .mobile-menu .menupng{
+        visibility: hidden;
+    }
+    .mobile-menu{
+        background-image: url(../images/menu-tablet.png);
+        background-repeat: no-repeat; /* Tekrar etmesini engelle */
+        background-position: center bottom; /* Ortala ve en alta yerleştir */
+    }
+    .ad{
+        max-width: 110%;
+        width: 110%;
+        margin-top: 100px;
+    }
+    .ad .container{
+        max-width: 100%;
+        margin: 0;
+        border-right: none;
+        border-left: none;
+        border-radius: 0;
+        width: 110%;
+    }
+    .about-us .container{
+        max-width: 100%;
+        margin-top: 80px;
+    }
+    .about-us .container .about-head{
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 54px;
+    }
+    .about-us .container .about-content .about-img-div{
+        background-image: url(../images/about-tablet.png);
+        background-repeat: no-repeat;
+    }
+    .about-us .container .about-content .about-img{
+        width: 304px;
+        height: 304px;
+        visibility: hidden;
+    }   
+    .about-us .container .about-content{
+        margin-left: 20px;
+    }
+    .about-us .container .about-content .about-text-div{
+        display: flex;
+        gap: 40px;
+        margin-top: 30px;
+    }
+    .about-us .container .about-content .about-text-div .about-text{
+        font-size: 16px;
+        line-height: 20px;
+        max-width: 280px;
+        margin: 0;
+    }
+    .our-course{
+        margin-top: 100px;
+    }
+    .our-course .container .course-content{
+        display: flex;
+        margin-bottom: 50px;
+    }
+    .our-course .container .course-content .course-head{
+        font-size: 48px;
+        line-height: 54px;
+        margin: 0;
+        margin-left: 20px;
+        font-weight: 400;
+    }
+    .our-course .container .course-content .course-text{
+        font-size: 16px;
+        line-height: 20px;
+        margin: 0;
+    }
+}
