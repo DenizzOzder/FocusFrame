@@ -95,6 +95,9 @@ header .container{
     height: 32px;
     border: 1px solid var(--hero-cards);
 }
+.container .header-menu .header-list{
+    display: none;
+}
 header .sign-btn{
     padding: 16px 58px;
     text-transform: uppercase;
@@ -161,10 +164,6 @@ header .icon-camm{
 }
 /* Header Ends */
 /*Hero Start*/
-.hero{
-    background-image: url(../images/Graphic.png);
-    background-repeat: no-repeat;
-}
 .hero .container{
     display: flex;
     margin: 20px;
@@ -177,11 +176,6 @@ header .icon-camm{
     background-image: url(../images/hero-img.png);
     background-repeat: no-repeat;
     background-position: bottom center;
-}
-.hero .container .hero-img{
-    margin: 0 38px;
-    visibility: hidden;
-    height: 400px;
 }
 .hero .container .hero-span{
     font-style: italic;
@@ -459,17 +453,22 @@ header .icon-camm{
     position: relative;
     overflow: hidden;
 }
+.hidden-review{
+    display: none;
+}
 .review .container{
     flex-direction: column;
 
 }
 .review .container .review-card{
     display: flex;
-    border: 1px solid #ffffff30;
     margin: 20px;
-    border-radius: 12px;
     flex-direction: column;
     margin-bottom: 80px;
+}
+.review .container .review-card .review-item{
+    border: 1px solid #ffffff30;
+    border-radius: 12px;
 }
 .review .container .review-card .review-content .review-img{
     margin-left: 20px;
@@ -562,7 +561,6 @@ footer .container .footer-form .submit{
 }
 footer .footer-footer{
     display: flex;
-    width: 90%;
     position: relative;
     overflow: hidden;
     justify-content: flex-end;
@@ -572,7 +570,6 @@ footer .footer-footer{
     margin-bottom: 20px;
 }
 footer .footer-footer .footer-text{
-    width: 100%;
     font-size: 12px;
     margin: 0;
     white-space: nowrap;
@@ -580,13 +577,14 @@ footer .footer-footer .footer-text{
 /*Footer End*/
 
 
-/* RESPONSIVE */
+/* RESPONSIVE TABLET */
 
 @media (min-width:768px) and (max-width:1158px){
     body{
         max-width: 768px;
         background-image: url(../images/bg-tablet.png);
     }
+    /* HEADER START */
     header{
         max-width: 768px;
         margin: 20 auto;
@@ -600,6 +598,8 @@ footer .footer-footer .footer-text{
         margin-left: 20px;
         border:none;
     }
+    /* HEADER END  */
+    /* HERO START */
     .hero .container{
         max-width: 100%;
         width: 100%;
@@ -627,27 +627,21 @@ footer .footer-footer .footer-text{
         align-items: flex-start;
         gap: 8px;
     }
-    .hero .container .hero-img{
-        margin: 0 38px;
-        visibility: hidden;
-        height: auto;
-    }
+    /* HERO END */
+    /* Mobile Menu Start  */
     .mobile-menu{
         width: 480px;
         height: 1024px;
     }
-
     .mobile-menu .nav-list {
         list-style: none;
         padding: 0;
         margin-top: 232px;
         margin-left: 64px;
     }
-    
     .mobile-menu .nav-list .nav-list-item {
         margin-bottom: 28px;
     }
-
     .mobile-menu .menupng{
         visibility: hidden;
     }
@@ -656,6 +650,8 @@ footer .footer-footer .footer-text{
         background-repeat: no-repeat; /* Tekrar etmesini engelle */
         background-position: center bottom; /* Ortala ve en alta yerleştir */
     }
+    /* Mobile Menu END */
+    /* AD Start */
     .ad{
         max-width: 110%;
         width: 110%;
@@ -669,6 +665,8 @@ footer .footer-footer .footer-text{
         border-radius: 0;
         width: 110%;
     }
+    /* AD END */
+    /* About Us START */
     .about-us .container{
         max-width: 100%;
         margin-top: 80px;
@@ -701,6 +699,8 @@ footer .footer-footer .footer-text{
         max-width: 280px;
         margin: 0;
     }
+    /* About US END */
+    /* Our Course START */
     .our-course{
         margin-top: 100px;
     }
@@ -729,7 +729,8 @@ footer .footer-footer .footer-text{
     .our-course .container .course-list .course-list-item{
         width: 43%;
     }
-
+    /* Our Course END */
+    /* Our Mentor Start */
     .our-mentor .container .mentor-head{
         font-size: 48px;
         line-height: 54px;
@@ -742,15 +743,212 @@ footer .footer-footer .footer-text{
     .our-mentor .container .mentor-list .mentor-list-item{
         width: 44%;
     }
-
+    /* Our Mentor END */
+    /* Sign START */
     .signUp .container{
         max-width: 480px;
         margin-left: 12px;
     }
-
     .signUp .container .signUp-head{
         font-size: 48px;
         line-height: 54px;
     }
+    /* Sign END */
+    /* Review START */
+    .review .container .review-head{
+        font-size: 48px;
+        line-height: 54px;
+    }
+    .review .container .review-card{
+        margin: 32px;
+    }
+    /* Review END */
+    /* Footer START */
+    footer .container{
+        display: flex;
+        flex-direction: row;
+        margin-top: 50px;
+        margin-left: 12px;
+    }
+    footer .footer-footer{
+        margin-left: 32px;
+    }
+    /* Footer END */
+}
+/* TABLET Responsive END */
 
+@media (min-width:1280px){
+    body{
+        max-width: 1280px;
+        background-image: url(../images/bg-pc.png);
+    }
+    header .container .header-menu svg{
+        display: none;
+    }
+    header .container .logo{
+        width: fit-content;
+    }
+    header{
+        max-width: 1280px;
+        margin: 20 auto;
+        width: 100%;
+    }
+    header .container{
+        max-width: 100%;
+    }
+    header .sign-btn{
+        display: block;
+        margin-left: 20px;
+        border:none;
+    }
+    .container .header-menu{
+        justify-content: center;
+    }
+    header .container .header-menu .header-list{
+        display: flex;
+        gap: 28px;
+    }
+    header .container .header-menu .header-list .header-list-item{
+        white-space: nowrap;
+    }
+    header .container .header-menu .header-list .header-list-item .header-list-link{
+        font-size: 14px;
+        line-height: auto;
+        text-transform: uppercase;
+    }
+    .hero .container{
+        max-width: 1080px;
+        background-image: url(../images/hero-pc.png);
+        background-position: bottom right;
+        margin: 80px auto;
+    }
+    .hero .container .hero-heading{
+        font-size: 64px;
+        line-height: 68px;
+        max-width: 539px;
+    }
+    .hero .container .hero-para{
+        max-width: 418px;
+    }
+    .hero .container .hero-card{
+        margin-top: 136px;
+        margin-bottom: 50px;
+    }
+    .hero .container .hero-card .card-users{
+        display: flex;
+    }
+    .hero .container .hero-card .card-users .user-para{
+        flex-direction: column;
+        gap: 8px;
+        align-items: start;
+    }
+    .ad{
+        max-width: 1280px;
+    }
+    .ad .container .ad-head{
+        font-size: 59px;
+        line-height: 64px;
+    }
+    .about-us{
+        margin: 0 100px;
+    }
+    .about-us .container{
+        margin-top: 150px;
+    }
+    .about-us .container .about-head{
+        font-size: 48px;
+        line-height: 54px;
+    }
+    .about-us .container .about-content{
+        display: flex;
+    }
+    .about-us .container .about-content .about-text-div{
+        display: flex;
+    }
+    .about-us .container .about-content .about-text-div .about-text{
+        max-width: 264px;
+        font-size: 16px;
+    }
+
+    .our-course{
+        margin: 150px 0;
+    }
+    .our-course .container{
+        margin: 0 100px;
+    }
+    .our-course .container .course-content{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .our-course .container .course-content .course-head{
+        font-size: 48px;
+        line-height: 54px;
+    }
+    .our-course .container .course-content .course-text {
+        max-width: 400px;   
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .our-course .container .course-list{
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .our-course .container .course-list .course-list-item{
+        background: linear-gradient(to bottom, #060707, #1D1D1D);
+    }
+
+    .our-mentor{
+        margin: 0 100px;
+    }
+    .our-mentor .container .mentor-head{
+        font-size: 48px;
+        line-height: 54px;
+    }
+
+    .signUp{
+        margin: 150px 100px;
+        background-image: url(../images/sign-bg-pc.png);
+        background-repeat: no-repeat;
+        background-position: center right;     
+    }
+    .signUp .container{
+        width: 100%;
+        max-width: 480px;
+    }
+    .signUp .container .signUp-head{
+        font-size: 48px;
+        font-weight: 500;
+    }
+
+    .review{
+        margin: 0 100px;
+    }
+    .review .container .review-head{
+        font-size: 48px;
+        line-height: 54px;
+        font-weight: 500;
+    }
+    .review .container .review-card{
+        flex-direction: row;
+        gap: 20px;
+    }
+    .review .container .review-card .review-item{
+        max-width: 530px;
+    }
+    .hidden-review{
+        display: list-item;
+    }
+
+    footer .container{
+        display: flex;
+        flex-direction: row;
+        gap: 140px;
+        margin: 50px 100px;
+    }
+    footer .footer-footer{
+        margin: 0 100px;
+        justify-content: space-between;
+    }
+    /* Footer END */
 }
