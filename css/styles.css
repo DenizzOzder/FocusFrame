@@ -93,6 +93,56 @@ header{
     height: 32px;
     border: 1px solid var(--hero-cards);
 }
+
+ /*Mobil Menü */
+ .mobile-menu {
+    position: fixed;
+    top: 0px;
+    right: -100%;
+    width: 218px;
+    background: #BEA69E;
+    border-radius: 12px;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    height: 812PX;
+    transition: right 0.3s ease-in-out;
+}
+.mobile-menu .close{
+    display: block;
+    position: absolute;
+    right: 20px;
+}
+.mobile-menu .nav-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 180px;
+}
+
+.mobile-menu .nav-list .nav-list-item {
+    margin-bottom: 10px;
+}
+
+.mobile-menu .nav-list .nav-list-item a {
+    text-decoration: none;
+    color: var(--header);
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: auto;
+    text-transform: uppercase;
+}
+.mobile-menu .nav-list .nav-list-item a:active{
+    font-weight: 700;
+}
+.mobile-menu .menupng{
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.mobile-menu.active {
+    right: 0;
+}
 /* Header Ends */
 /*Hero Start*/
 .hero{

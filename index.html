@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="author" content="Deniz Can Özder">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- FONTS -->
@@ -8,11 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:wght@400;500;600;700;800&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- FONTS END -->
+     <!-- Favicon -->
+     <link rel="icon" type="image/svg+xml" href="./images/icons.svg#icon-cam">
     <!-- Modernamalize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Modernormalize END -->
     <!-- CSS -->
      <link rel="stylesheet" href="./css/styles.css">
+     <script src="js/js.js" defer></script>
      <title>FocusFrame 2.0</title>
 </head>
 <body>
@@ -30,7 +34,7 @@
                         <use xlink:href="./images/icons.svg#icon-cam"></use>
                     </svg>
                 </section>
-                <svg width="32" height="22">
+                <svg width="32" height="22" id="burger-menu">
                     <use xlink:href="./images/icons.svg#icon-burger"></use>
                 </svg>
             </section>
@@ -246,5 +250,18 @@
                 © All rights reserved</p>
         </section>
     </footer>
+    <nav id="mobile-nav" class="mobile-menu">
+        <svg width="24" height="24" class="close" id="close-menu">
+            <use xlink:href="./images/icons.svg#icon-close"></use>
+        </svg>
+        <ul class="nav-list">
+            <li class="nav-list-item"><a href="#">about us</a></li>
+            <li class="nav-list-item"><a href="#">our courses</a></li>
+            <li class="nav-list-item"><a href="#">our mentors</a></li>
+            <li class="nav-list-item"><a href="#">reviews</a></li>
+            <li class="nav-list-item"><a href="#">contacts</a></li>
+        </ul>
+        <img src="./images/mobil-menu.png" alt="Mobil Menü Camera" class="menupng">
+    </nav>
 </body>
 </html>
