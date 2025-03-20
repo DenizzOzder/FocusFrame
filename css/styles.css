@@ -176,6 +176,7 @@ header .icon-camm{
     background-image: url(../images/hero-img.png);
     background-repeat: no-repeat;
     background-position: bottom center;
+    height: 777px;
 }
 .hero .container .hero-span{
     font-style: italic;
@@ -354,6 +355,7 @@ header .icon-camm{
  }
  .our-mentor .container .mentor-list{
     display: flex;
+    flex-direction: column;
     gap: 40px;
  }
  .our-mentor .container .mentor-list-item{
@@ -391,28 +393,28 @@ header .icon-camm{
     overflow: hidden;
     margin-top: 80px;
  }
- .signUp .container{
+ .signUp .container2{
     flex-direction: column;
  }
- .signUp .container .signUp-head .sign-span{
+ .signUp .container2 .container .signUp-head .sign-span{
     font-style: normal;
  }
- .signUp .container .signUp-head{
+ .signUp .container2 .signUp-head{
     margin-bottom: 0;
  }
-.signUp .container .sign-form{
+.signUp .container2 .sign-form{
     margin: 20px;
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
-.signUp .container .sign-form .form-input{
+.signUp .container2 .sign-form .form-input{
     border: 1px solid #ffffff40;
     background-color: #12121200;
     border-radius: 12px;
     padding: 14px 18px;
 }
-.signUp .container .sign-form .submit{
+.signUp .container2 .sign-form .submit{
     background-color: var(--text-color);
     color: var(--header);
     font-weight: 700;
@@ -420,7 +422,7 @@ header .icon-camm{
     line-height: 20px;
     margin-top: 32px;
 }
-.signUp .container .sign-form .text-area{
+.signUp .container2 .sign-form .text-area{
     height: 150px;
     padding: 20px;
     text-align: left;
@@ -431,18 +433,18 @@ header .icon-camm{
     border-radius: 12px;
     vertical-align: top;
 }
-.signUp .container .sign-form .form-footer{
+.signUp .container2 .sign-form .form-footer{
     margin: 12px 0;
     color: #ffffff40;
     font-size: 12px;
 }
-.signUp .container .sign-form .form-footer .form-link{
+.signUp .container2 .sign-form .form-footer .form-link{
     color: inherit;
     text-decoration: underline;
     width: fit-content;
     display: inline-block;
 }
-.signUp .container .sign-form .form-footer .form-link:hover, .signUp .container .sign-form .form-footer .form-link:active{
+.signUp .container2 .sign-form .form-footer .form-link:hover, .signUp .container .sign-form .form-footer .form-link:active{
     color: var(--span-hovers);
 }
 /*Sign Up End*/
@@ -581,17 +583,17 @@ footer .footer-footer .footer-text{
 
 @media (min-width:768px) and (max-width:1158px){
     body{
-        max-width: 768px;
+        max-width: 1157px;
         background-image: url(../images/bg-tablet.png);
+        background-repeat: repeat;
     }
     /* HEADER START */
     header{
-        max-width: 768px;
-        margin: 20 auto;
+        max-width: 1157px;
         width: 100%;
     }
     header .container{
-        max-width: 100%;
+        max-width: 1157px;
     }
     header .sign-btn{
         display: block;
@@ -607,6 +609,8 @@ footer .footer-footer .footer-text{
         background-size: 393px 434px;   /* Resmi kırpmadan sığdır */
         background-repeat: no-repeat; /* Tekrar etmesini engelle */
         background-position: center bottom; /* Ortala ve en alta yerleştir */
+        height: 900px;
+        max-width: 1157px;
     }
     .hero .container .hero-heading{
         font-size: 60px;
@@ -668,8 +672,9 @@ footer .footer-footer .footer-text{
     /* AD END */
     /* About Us START */
     .about-us .container{
-        max-width: 100%;
+        max-width: 1158px;
         margin-top: 80px;
+        margin: auto;
     }
     .about-us .container .about-head{
         font-size: 48px;
@@ -679,6 +684,8 @@ footer .footer-footer .footer-text{
     .about-us .container .about-content .about-img-div{
         background-image: url(../images/about-tablet.png);
         background-repeat: no-repeat;
+        max-width: 704px;
+        margin: 0 auto;
     }
     .about-us .container .about-content .about-img{
         width: 304px;
@@ -692,6 +699,7 @@ footer .footer-footer .footer-text{
         display: flex;
         gap: 40px;
         margin-top: 30px;
+        justify-content: center;
     }
     .about-us .container .about-content .about-text-div .about-text{
         font-size: 16px;
@@ -702,7 +710,8 @@ footer .footer-footer .footer-text{
     /* About US END */
     /* Our Course START */
     .our-course{
-        margin-top: 100px;
+        padding: 100px 50px;
+        background-color: #121212;
     }
     .our-course .container .course-content{
         display: flex;
@@ -723,6 +732,9 @@ footer .footer-footer .footer-text{
         margin: 0;
         max-width: 381px;
     }
+    .our-course .container .course-list .course-list-item{
+        background: linear-gradient(to bottom, #060707, #1D1D1D);
+    }
     .our-course .container .course-list{
         margin-left: 32px;
     }
@@ -731,6 +743,11 @@ footer .footer-footer .footer-text{
     }
     /* Our Course END */
     /* Our Mentor Start */
+    .our-mentor{
+        margin-top: 0;
+        padding: 60px 60px;
+        background-color: #121212;
+    }
     .our-mentor .container .mentor-head{
         font-size: 48px;
         line-height: 54px;
@@ -738,6 +755,7 @@ footer .footer-footer .footer-text{
     }
     .our-mentor .container .mentor-list{
         flex-wrap: wrap;
+        flex-direction: row;
         margin: 50px 100px;
     }
     .our-mentor .container .mentor-list .mentor-list-item{
@@ -745,6 +763,11 @@ footer .footer-footer .footer-text{
     }
     /* Our Mentor END */
     /* Sign START */
+    .signUp{
+        margin-top: 0;
+        padding: 80px 60px;
+        background-color: #121212;
+    }
     .signUp .container{
         max-width: 480px;
         margin-left: 12px;
@@ -755,6 +778,9 @@ footer .footer-footer .footer-text{
     }
     /* Sign END */
     /* Review START */
+    .review{
+        background-color: #121212;
+    }
     .review .container .review-head{
         font-size: 48px;
         line-height: 54px;
@@ -764,14 +790,19 @@ footer .footer-footer .footer-text{
     }
     /* Review END */
     /* Footer START */
+    footer{
+        background-image: url(../images/footer-tablet.png);
+    }
     footer .container{
         display: flex;
         flex-direction: row;
         margin-top: 50px;
-        margin-left: 12px;
+        justify-content: center;
     }
     footer .footer-footer{
-        margin-left: 32px;
+        max-width: 1158px;
+        margin: 20px 80px;
+        justify-content: space-between;
     }
     /* Footer END */
 }
@@ -779,8 +810,9 @@ footer .footer-footer .footer-text{
 
 @media (min-width:1280px){
     body{
-        max-width: 1280px;
+        max-width: 100%;
         background-image: url(../images/bg-pc.png);
+        background-repeat: repeat;
     }
     header .container .header-menu svg{
         display: none;
@@ -789,8 +821,8 @@ footer .footer-footer .footer-text{
         width: fit-content;
     }
     header{
-        max-width: 1280px;
-        margin: 20 auto;
+        max-width: 1440px;
+        margin: 20px auto;
         width: 100%;
     }
     header .container{
@@ -817,7 +849,7 @@ footer .footer-footer .footer-text{
         text-transform: uppercase;
     }
     .hero .container{
-        max-width: 1080px;
+        max-width: 1440px;
         background-image: url(../images/hero-pc.png);
         background-position: bottom right;
         margin: 80px auto;
@@ -843,17 +875,18 @@ footer .footer-footer .footer-text{
         align-items: start;
     }
     .ad{
-        max-width: 1280px;
+        max-width: 100%;
     }
     .ad .container .ad-head{
         font-size: 59px;
         line-height: 64px;
     }
     .about-us{
-        margin: 0 100px;
+        padding: 150px 100px;
     }
     .about-us .container{
-        margin-top: 150px;
+        max-width: 1440px;
+        margin: 0 auto;
     }
     .about-us .container .about-head{
         font-size: 48px;
@@ -861,6 +894,7 @@ footer .footer-footer .footer-text{
     }
     .about-us .container .about-content{
         display: flex;
+        justify-content: center;
     }
     .about-us .container .about-content .about-text-div{
         display: flex;
@@ -869,12 +903,13 @@ footer .footer-footer .footer-text{
         max-width: 264px;
         font-size: 16px;
     }
-
     .our-course{
-        margin: 150px 0;
+        background-color: #121212;
     }
     .our-course .container{
-        margin: 0 100px;
+        margin: 150px 100px;
+        max-width: 1440px;
+        margin: 0 auto;
     }
     .our-course .container .course-content{
         display: flex;
@@ -899,18 +934,33 @@ footer .footer-footer .footer-text{
     }
 
     .our-mentor{
-        margin: 0 100px;
+        padding: 100px 100px;
+        background-color: #121212;
+        margin-top: 0;
+    }
+    .our-mentor .container{
+        max-width: 1440px;
+        margin: 0 auto;
     }
     .our-mentor .container .mentor-head{
         font-size: 48px;
         line-height: 54px;
     }
+    .our-mentor .container .mentor-list{
+        flex-direction: row;
+    }
 
     .signUp{
-        margin: 150px 100px;
+        padding: 150px 100px;  
+        background-color: #121212; 
+        margin-top: 0;
+    }
+    .signUp .container2{
+        max-width: 1440px;
+        margin: 0 auto;
         background-image: url(../images/sign-bg-pc.png);
         background-repeat: no-repeat;
-        background-position: center right;     
+        background-position: center right;  
     }
     .signUp .container{
         width: 100%;
@@ -922,7 +972,12 @@ footer .footer-footer .footer-text{
     }
 
     .review{
-        margin: 0 100px;
+       padding: 0 100px;
+       background-color: #121212;
+    }
+    .review .container{
+        max-width: 1440px;
+        margin: 0 auto;
     }
     .review .container .review-head{
         font-size: 48px;
@@ -934,20 +989,25 @@ footer .footer-footer .footer-text{
         gap: 20px;
     }
     .review .container .review-card .review-item{
-        max-width: 530px;
+        max-width: 750px;
     }
     .hidden-review{
         display: list-item;
     }
-
+    footer{
+        background-image: url(../images/footer-pc.png);
+    }
     footer .container{
         display: flex;
         flex-direction: row;
         gap: 140px;
-        margin: 50px 100px;
+        margin: 0 auto;
+        max-width: 1440px;
+        justify-content: center;
     }
     footer .footer-footer{
-        margin: 0 100px;
+        max-width: 1040px;
+        margin: 0 auto;
         justify-content: space-between;
     }
     /* Footer END */
